@@ -1,0 +1,60 @@
+20-2-2023
+
+app.js
+import logo from './logo.svg';
+import './App.css';
+import {Welcome,Wellcome} from './components/Welcome'
+import Hello from './components/Hello'
+import Hai from './components/Hai'
+
+function App() {
+  return (
+    <div className="App">
+      {/* <Welcome/>
+      <Wellcome/> */}
+       <Hello/>
+      {/* <Hai/> */} 
+
+    </div>
+  );
+}
+
+export default App;
+
+
+
+Welcome.js
+
+import React from 'react';
+export function Welcome(){
+    return <h1>Welcome React</h1>//jsx
+}
+export function Wellcome(){
+    return <h1>Wellcome React</h1>//jsx
+}
+// export default Welcome;
+
+
+Hello.js
+
+
+import React from "react";
+const Hello=()=> {
+    return React.createElement("div",{id:"home",class:"homeclass"},React.createElement("h1",{id:"home"},"Welcome"))
+
+} 
+export default Hello;
+
+
+Hai.js
+
+import React from "react";
+class Hai extends React.Component{
+    render(){
+        return <h1>Hai</h1>
+    }
+
+}
+export default Hai;
+
+
